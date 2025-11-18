@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Markazul Uloom Mahallu — Pariyaram</title>
+  <style>
+    :root{
+      --green:#0f7a4a;
+      --gold:#c99a2a;
+      --muted:#f7f7f7;
+      --card:#ffffff;
+      --accent:#f0fff4;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--accent),#fff);color:#111}
+    header{background:linear-gradient(90deg,var(--green),#0a5c3b);color:#fff;padding:28px 18px}
+    .container{max-width:1000px;margin:20px auto;padding:0 18px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .brand h1{margin:0;font-size:20px}
+    .top-contact{margin-left:auto;text-align:right;font-size:14px}
+    .hero{background:var(--card);border-radius:12px;padding:18px;margin-top:16px;box-shadow:0 6px 18px rgba(10,10,10,0.06);display:flex;gap:18px;align-items:center}
+    .hero .left{flex:1}
+    .hero .right{width:220px;text-align:center}
+    .btn{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--green);color:#fff;text-decoration:none}
+    section{margin-top:18px}
+    h2{margin:0 0 10px 0;color:var(--green)}
+    p.lead{margin:0;color:#333}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .card{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.04)}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:8px;text-align:left;border-bottom:1px solid #eee}
+    .donation{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    .qr{background:#fafafa;border-radius:8px;padding:12px;text-align:center}
+    .event{display:flex;justify-content:space-between;align-items:center;gap:12px}
+    footer{margin-top:30px;padding:18px 0;color:#555;text-align:center;font-size:14px}
+    @media(max-width:720px){.hero{flex-direction:column}.donation{grid-template-columns:1fr}.top-contact{text-align:left}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <div>
+          <!-- Optional logo: replace with an <img> if available -->
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="24" height="24" rx="6" fill="white" />
+            <path d="M12 3v9" stroke="var(--green)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 12c0 3.3137 2.6863 6 6 6s6-2.6863 6-6v-6" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div>
+          <h1>Markazul Uloom Mahallu — Pariyaram</h1>
+          <div style="font-size:13px;color:#f2f2f2;margin-top:4px">Kalpetta, Wayanad, Kerala 673122</div>
+        </div>
+        <div class="top-contact">
+          <div>Contact: <strong>+91 94468 91784</strong></div>
+          <div>Total Members: <strong>180</strong></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="hero">
+      <div class="left">
+        <h2>Welcome to Markazul Uloom Mahallu</h2>
+        <p class="lead">A warm community for prayer, learning and service. We run a full Madrasah programme from Standard 1 to Standard 10 and host regular community events and majlis.</p>
+
+        <div style="margin-top:12px">
+          <a class="btn" href="#events">Next Event: Mahlarathul Badriya — Nov 28, 2025 after Maghrib</a>
+          <a class="btn" href="#donations" style="background:var(--gold);color:#063">Donate</a>
+        </div>
+      </div>
+      <div class="right">
+        <div style="font-size:13px;color:#666;margin-bottom:8px">Vision</div>
+        <div style="background:linear-gradient(180deg,#fff,#f7fff4);padding:10px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.04)">“To nurture and unite our Islamic community with uplifting spiritual, educational, and social opportunities for all ages.”</div>
+      </div>
+    </div>
+
+    <section id="about">
+      <h2>Mission</h2>
+      <div class="cards">
+        <div class="card">
+          <h3 style="margin-top:0">Foster Islamic Values</h3>
+          <p>We nurture faith and character from childhood onward.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Educational Excellence</h3>
+          <p>Support for Madrasah education (Std 1 to Std 10) with qualified teachers and structured curriculum.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Community Space</h3>
+          <p>A welcoming place for prayer, learning and community service.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="committee">
+      <h2>Committee Bearers</h2>
+      <style>
+        .bearer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:8px}
+        .bearer{background:var(--card);padding:12px;border-radius:10px;display:flex;gap:12px;align-items:center;box-shadow:0 4px 12px rgba(0,0,0,0.04)}
+        .bearer img{width:72px;height:72px;border-radius:50%;object-fit:cover;border:2px solid var(--green)}
+        .bearer .meta{flex:1}
+        .bearer .meta h4{margin:0 0 4px 0}
+        .bearer .meta p{margin:0;font-size:13px;color:#555}
+      </style>
+
+      <div class="bearer-grid">
+        <div class="bearer">
+          <img src="photos/hassan.jpg" alt="Hassan Kadiri - President" onerror="this.src='photos/placeholder-person.png'">
+          <div class="meta">
+            <h4>Hassan Kadiri</h4>
+            <p><strong>President</strong> — +91 94468 91784</p>
+          </div>
+        </div>
+
+        <div class="bearer">
+          <img src="photos/ashraf.jpg" alt="Ashraf Manakkodan - General Secretary" onerror="this.src='photos/placeholder-person.png'">
+          <div class="meta">
+            <h4>Ashraf Manakkodan</h4>
+            <p><strong>General Secretary</strong> — +91 99478 73157</p>
+          </div>
+        </div>
+
+        <div class="bearer">
+          <img src="photos/jazeel.jpg" alt="Jazeel U K - Finance Secretary" onerror="this.src='photos/placeholder-person.png'">
+          <div class="meta">
+            <h4>Jazeel U K</h4>
+            <p><strong>Finance Secretary</strong> — +91 99956 16377</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:10px;font-size:13px;color:#666">To update photos: upload images to the <code>photos/</code> folder and replace the filenames above (e.g. <code>photos/hassan.jpg</code>). A placeholder image will show if a photo is missing.</div>
+    </section>
+
+    <section id="madrasah">
+      <h2>Madrasah</h2>
+      <div class="card">
+        <p style="margin:0">Classes from <strong>Standard 1</strong> to <strong>Standard 10</strong>. For enquiries about admissions, class timings, or volunteering, please contact the General Secretary or the Finance Secretary.</p>
+      </div>
+    </section>
+
+    <section id="events">
+      <h2>Events & Announcements</h2>
+
+      <div class="card event" style="margin-bottom:12px">
+        <div>
+          <strong>Monthly Majlis</strong>
+          <div style="font-size:13px;color:#666;margin-top:6px">Every last Friday after Maghrib</div>
+        </div>
+        <div style="text-align:right">
+          <div style="font-size:13px;color:#666">Next Event</div>
+          <div style="font-weight:600">Mahlarathul Badriya — Nov 28, 2025<br><small>after Maghrib</small></div>
+        </div>
+      </div>
+
+      <!-- Announcements -->
+      <div class="card" id="announcements-card">
+        <h3 style="margin-top:0">Announcements</h3>
+        <div id="announcements-list">
+          <!-- Announcements rendered here -->
+        </div>
+        <div style="margin-top:10px;color:#666">Manage announcements below (changes are stored locally in your browser). To publish permanently, copy the announcement HTML to your site backend or ask an admin to update the page source.</div>
+      </div>
+
+      <!-- Event Photos Gallery -->
+      <div class="card">
+        <h3 style="margin-top:0">Event Photos</h3>
+        <p style="margin:0 0 8px 0">Browse recent event photos. To upload photos to the live website, place images in the <code>photos/events/</code> folder on your server and add the filenames to the gallery JSON below. A quick client-side uploader is provided for local preview and quick publishing (saves to your browser only).</p>
+
+        <div style="margin-top:10px">
+          <input type="file" id="event-photo-input" accept="image/*" multiple>
+          <button id="clear-gallery" style="margin-left:8px;padding:8px 10px;border-radius:6px">Clear Gallery</button>
+        </div>
+
+        <div id="gallery" style="margin-top:12px;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px"></div>
+        <small style="display:block;margin-top:8px;color:#666">Tip: For permanent hosting, upload images to <code>photos/events/</code> and then edit the <code>gallerySources</code> array in the page source to include the filenames (see developer note below).</small>
+
+        <details style="margin-top:8px"><summary>Developer note: Add server-hosted images</summary>
+          <pre style="background:#f4f4f4;padding:8px;border-radius:6px;overflow:auto">// Example: add images served from photos/events/
+const serverImages = [
+  'photos/events/event1.jpg',
+  'photos/events/event2.jpg',
+];
+// Then include these paths in the gallerySources array in the script below.</pre>
+        </details>
+      </div>
+
+      <!-- Lightbox modal -->
+      <div id="lightbox" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.8);align-items:center;justify-content:center;padding:20px;z-index:9999">
+        <img id="lightbox-img" src="" alt="" style="max-width:100%;max-height:90%;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,0.6)">
+        <button id="lightbox-close" style="position:fixed;top:18px;right:18px;padding:8px 10px;border-radius:6px">Close</button>
+      </div>
+
+    </section>
+
+    <script>
+      // Simple announcements + gallery management using browser localStorage.
+      (function(){
+        // --- Announcements ---
+        const annKey = 'mahallu_announcements_v1';
+        const announcementsList = document.getElementById('announcements-list');
+
+        function renderAnnouncements(){
+          const data = JSON.parse(localStorage.getItem(annKey) || '[]');
+          if(data.length===0){
+            announcementsList.innerHTML = '<p style="color:#666;margin:0">No announcements yet.</p>';
+            return;
+          }
+          announcementsList.innerHTML = data.map((a,idx)=>`<div style="padding:8px;border-bottom:1px solid #eee"><strong>${a.title}</strong><div style="font-size:13px;color:#444;margin-top:4px">${a.body}</div><div style="margin-top:6px;font-size:12px;color:#888">Posted: ${new Date(a.posted).toLocaleString()}</div><div style="margin-top:6px"><button data-idx="${idx}" class="del-ann" style="padding:6px 8px;border-radius:6px">Delete</button></div></div>`).join('');
+          document.querySelectorAll('.del-ann').forEach(btn=>btn.addEventListener('click',e=>{
+            const idx = parseInt(e.target.getAttribute('data-idx'));
+            const arr = JSON.parse(localStorage.getItem(annKey) || '[]'); arr.splice(idx,1); localStorage.setItem(annKey,JSON.stringify(arr)); renderAnnouncements();
+          }));
+        }
+
+        renderAnnouncements();
+
+        // Quick admin UI (toggleable)
+        const adminToggle = document.createElement('button');
+        adminToggle.textContent = 'Manage Announcements & Photos';
+        adminToggle.style = 'margin-top:10px;padding:8px 12px;border-radius:8px;background:var(--green);color:#fff;border:none;cursor:pointer';
+        announcementsList.parentNode.insertBefore(adminToggle, announcementsList.nextSibling);
+
+        const adminPanel = document.createElement('div');
+        adminPanel.style = 'background:#fff;border-radius:8px;padding:10px;margin-top:10px;display:none;box-shadow:0 6px 18px rgba(0,0,0,0.05)';
+        adminPanel.innerHTML = `
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <input id="ann-title" placeholder="Announcement title" style="flex:1;padding:8px;border-radius:6px;border:1px solid #ddd">
+            <button id="add-ann" style="padding:8px 12px;border-radius:6px">Add Announcement</button>
+          </div>
+          <textarea id="ann-body" placeholder="Announcement body" style="width:100%;margin-top:8px;padding:8px;border-radius:6px;border:1px solid #ddd;min-height:80px"></textarea>
+        `;
+        adminToggle.parentNode.insertBefore(adminPanel, adminToggle.nextSibling);
+
+        adminToggle.addEventListener('click',()=>{ adminPanel.style.display = adminPanel.style.display === 'none' ? 'block' : 'none'; });
+
+        document.addEventListener('click',function(e){
+          if(e.target && e.target.id === 'add-ann'){
+            const t = document.getElementById('ann-title').value.trim();
+            const b = document.getElementById('ann-body').value.trim();
+            if(!t && !b){ alert('Please add a title or body.'); return }
+            const arr = JSON.parse(localStorage.getItem(annKey) || '[]');
+            arr.unshift({title: t||'(No title)', body: b||'', posted:new Date().toISOString()});
+            localStorage.setItem(annKey, JSON.stringify(arr));
+            document.getElementById('ann-title').value=''; document.getElementById('ann-body').value=''; renderAnnouncements();
+          }
+        });
+
+        // --- Gallery ---
+        const galleryEl = document.getElementById('gallery');
+        const inputEl = document.getElementById('event-photo-input');
+        const galleryKey = 'mahallu_event_gallery_v1';
+
+        function renderGallery(){
+          const imgs = JSON.parse(localStorage.getItem(galleryKey) || '[]');
+          galleryEl.innerHTML = imgs.map((src,i)=>`<div style="position:relative;border-radius:8px;overflow:hidden"><img src="${src}" data-i="${i}" style="width:100%;height:160px;object-fit:cover;display:block;cursor:pointer"></div>`).join('');
+          // click to open lightbox
+          galleryEl.querySelectorAll('img').forEach(img=>img.addEventListener('click',e=>{ document.getElementById('lightbox-img').src = e.target.src; document.getElementById('lightbox').style.display='flex'; }));
+        }
+
+        renderGallery();
+
+        inputEl.addEventListener('change', async function(e){
+          const files = Array.from(e.target.files || []);
+          if(files.length===0) return;
+          const arr = JSON.parse(localStorage.getItem(galleryKey) || '[]');
+          for(const f of files){
+            if(!f.type.startsWith('image/')) continue;
+            const data = await readFileAsDataURL(f);
+            arr.unshift(data);
+          }
+          localStorage.setItem(galleryKey, JSON.stringify(arr));
+          inputEl.value=''; renderGallery();
+        });
+
+        document.getElementById('clear-gallery').addEventListener('click',()=>{ if(confirm('Clear gallery from this browser?')){ localStorage.removeItem(galleryKey); renderGallery(); } });
+
+        document.getElementById('lightbox-close').addEventListener('click',()=>{ document.getElementById('lightbox').style.display='none'; document.getElementById('lightbox-img').src=''; });
+        document.getElementById('lightbox').addEventListener('click',(e)=>{ if(e.target.id==='lightbox') { document.getElementById('lightbox').style.display='none'; document.getElementById('lightbox-img').src=''; }});
+
+        function readFileAsDataURL(file){
+          return new Promise((res,rej)=>{
+            const r=new FileReader(); r.onload = ()=>res(r.result); r.onerror=rej; r.readAsDataURL(file);
+          });
+        }
+
+      })();
+    </script>
+
+    <section id="donations">
+      <h2>Support & Payments</h2>
+      <div class="card donation">
+        <div>
+          <p>We welcome donations to support the Madrasah, community services and maintenance. Use any of the following methods:</p>
+          <ul>
+            <li>UPI / QR code (scan image on the right)</li>
+            <li>Bank Transfer — use the bank details provided by the Finance Secretary</li>
+            <li>Cash / Cheque at the Mahallu office</li>
+          </ul>
+
+          <p><strong>Contact for donations:</strong> Finance Secretary — <a href="tel:+919995616377">+91 99956 16377</a></p>
+
+          <details>
+            <summary style="cursor:pointer">Suggested bank details (edit before publishing)</summary>
+            <div style="margin-top:6px;font-size:14px;color:#333">
+              Account Name: <em>Replace with account name</em><br>
+              Account Number: <em>Replace with account number</em><br>
+              IFSC: <em>Replace with IFSC</em>
+            </div>
+          </details>
+        </div>
+        <div class="qr">
+          <!-- Replace src with actual QR code image for UPI -->
+          <img src="qr-placeholder.png" alt="UPI QR code - replace with your QR" style="max-width:100%;height:auto;border-radius:8px;display:block;margin:0 auto 8px">
+          <div style="font-size:13px;color:#666">Scan to pay (UPI)</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="survey">
+      <h2>Community Survey</h2>
+      <div class="card">
+        <p>We value your feedback. Share suggestions or sign up to volunteer via this short form:</p>
+        <p><a class="btn" href="https://forms.gle/REPLACE_WITH_YOUR_FORM" target="_blank" rel="noopener">Open Feedback & Volunteer Form</a></p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="card">
+        <p><strong>Markazul Uloom Mahallu, Pariyaram</strong><br>
+        Kalpetta, Wayanad, Kerala 673122</p>
+        <p>Phone (Main): <a href="tel:+919446891784">+91 94468 91784</a></p>
+        <p>Committee Contacts:</p>
+        <ul>
+          <li>President — Hassan Kadiri: <a href="tel:+919446891784">+91 94468 91784</a></li>
+          <li>General Secretary — Ashraf Manakkodan: <a href="tel:+919947873157">+91 99478 73157</a></li>
+          <li>Finance Secretary — Jazeel U K: <a href="tel:+919995616377">+91 99956 16377</a></li>
+        </ul>
+        <p>If you have an email you'd like displayed here, replace the placeholder below:</p>
+        <p>Email: <a href="mailto:markazululoompym@gmail.com">markazululoompym@gmail.com</a> <small>(replace if needed)</small></p>
+      </div>
+      </section>
+
+    <!-- Location Section -->
+    <section id="location">
+      <h2>Location</h2>
+      <div class="card">
+        <p>Find Markazul Uloom Mahallu on Google Maps:</p>
+        <p><a class="btn" href="https://maps.app.goo.gl/UpC6jzsPmF2aUhBx8" target="_blank" rel="noopener">Open Location in Google Maps</a></p>
+        <p style="font-size:13px;color:#666;margin-top:10px">(Tap the button above to view directions.)</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="font-size:13px">Design theme: Islamic community colors — green, gold, white. Built for clarity and easy navigation.</div>
+      <div style="margin-top:6px">© Markazul Uloom Mahallu — Pariyaram</div>
+    </div>
+  </footer>
+
+</body>
+</html>
+mahallu-website
+mahallu-website/
+ ├── index.html
+ ├── photos/
+ │    ├── hassan.jpg
+ │    ├── ashraf.jpg
+ │    ├── jazeel.jpg
+ │    ├── events/
+ │    │     ├── event1.jpg
+ │    │     ├── event2.jpg
+ └── qr-placeholder.png
+https://yourusername.github.io/mahallu-website/
+https://mahallu-pariyaram.netlify.app
+mahallu-website/
+ ├─ index.html                ← the HTML file I made (edit placeholders)
+ ├─ README.txt                ← optional short notes for you
+ ├─ photos/
+ │   ├─ hassan.jpg
+ │   ├─ ashraf.jpg
+ │   ├─ jazeel.jpg
+ │   ├─ placeholder-person.png
+ │   ├─ qr.png                 ← UPI / donation QR
+ │   └─ events/
+ │       ├─ event1.jpg
+ │       └─ event2.jpg
+cd path/to/mahallu-website
+python -m http.server 8000
+cd path/to/mahallu-website
+git init
+git add .
+git commit -m "Initial site"
+# create repo on GitHub (manually) then add remote:
+git remote add origin https://github.com/yourusername/mahallu-website.git
+git branch -M main
+git push -u origin main
